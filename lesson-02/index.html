@@ -14,29 +14,34 @@
         <div class="content">
             <h1>Users - {{ usersLength }}</h1>
             <table class="table is-bordered is-striped is-fullwidth is-hoverable" v-if="showUsersTable">
+                <thead>
                 <tr>
                     <th>Photo</th>
                     <th>First name</th>
                     <th>Last name</th>
                     <th></th>
                 </tr>
-                <tr v-for="user of users">
+                </thead>
+                <tbody>
+                <tr v-for="user of users" v-bind:key="user.first_name">
                     <td>
                         <div class="image is-48x48">
-                            <img class="is-rounded" v-bind:src="user.photo ? user.photo : 'default-photo.jpg'" alt="">
+                            <img class="is-rounded" v-bind:src="user.photo || 'default-photo.jpg'" alt="">
                         </div>
                     </td>
                     <td>{{ user.first_name | capitalize }}</td>
                     <td>{{ user.last_name | capitalize }}</td>
                     <td>
-                        <button class="button is-outlined is-info" type="button" v-copy="user.first_name + ' ' + user.last_name" v-copy:callback="copied">Copy</button>
+                        <button class="button is-outlined is-info" type="button" v-copy="getCopyData(user.first_name, user.last_name)" v-copy:callback="copied">Copy</button>
                     </td>
                 </tr>
+                </tbody>
             </table>
-            <input class="button is-outlined is-info" type="button"
-                   v-on:click="showHideUsersTable()"
-                   v-bind:value="showUsersTable ? 'Hide' : 'Show'"
-                   v-tooltip.right-start="{ content: 'Table showing option', offset: 10 }">
+            <button class="button is-outlined is-info" type="button"
+                    v-on:click="showHideUsersTable"
+                    v-tooltip.right-start="{ content: 'Table showing option', offset: 10 }">
+                {{ showUsersTable ? 'Hide' : 'Show' }}
+            </button>
         </div>
     </div>
 </div>

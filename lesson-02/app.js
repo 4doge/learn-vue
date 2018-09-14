@@ -40,7 +40,10 @@ new Vue({
             this.showUsersTable = !this.showUsersTable;
         },
         copied: function(value) {
-            alert(`"${ value }" copied!`);
+            alert(value + ' copied!');
+        },
+        getCopyData: function(first_name, last_name) {
+            return this.$options.filters.capitalize(first_name) + ' ' +  this.$options.filters.capitalize(last_name);
         }
     },
     filters: {
