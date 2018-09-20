@@ -1,0 +1,92 @@
+{
+  "users": [
+    {
+      "_id": "5ba3660dfd816cf815030205",
+      "isActive": true,
+      "age": 23,
+      "firstName": "Latoya",
+      "lastName": "Nichols",
+      "company": "COMTRAK",
+      "email": "latoya.nichols@comtrak.biz",
+      "phone": "+1 (802) 511-3250",
+      "address": "709 Brown Street, Longoria, Puerto Rico, 7033",
+      "registered": "Saturday, January 2, 2016 3:48 PM",
+      "photo": "https://randomuser.me/api/portraits/women/1.jpg"
+    },
+    {
+      "_id": "5ba3660dc0af02e08ef3eb58",
+      "isActive": false,
+      "age": 28,
+      "firstName": "Earnestine",
+      "lastName": "Griffith",
+      "company": "ENOMEN",
+      "email": "earnestine.griffith@enomen.biz",
+      "phone": "+1 (854) 411-2206",
+      "address": "983 Provost Street, Catharine, Oregon, 225",
+      "registered": "Wednesday, March 28, 2018 7:17 PM",
+      "photo": "https://randomuser.me/api/portraits/women/2.jpg"
+    },
+    {
+      "_id": "5ba3660dee81b26e7f8660a2",
+      "isActive": false,
+      "age": 30,
+      "firstName": "Estelle",
+      "lastName": "Valentine",
+      "company": "TURNABOUT",
+      "email": "estelle.valentine@turnabout.io",
+      "phone": "+1 (989) 512-3230",
+      "address": "769 Scholes Street, Alafaya, Georgia, 3951",
+      "registered": "Sunday, June 1, 2014 11:09 AM"
+    },
+    {
+      "_id": "5ba3660db255f93c241a5528",
+      "isActive": false,
+      "age": 30,
+      "firstName": "Coffey",
+      "lastName": "Barber",
+      "company": "LUXURIA",
+      "email": "coffey.barber@luxuria.co.uk",
+      "phone": "+1 (953) 413-3994",
+      "address": "145 Gunnison Court, Shrewsbury, Virginia, 4257",
+      "registered": "Tuesday, September 16, 2014 9:32 PM"
+    },
+    {
+      "_id": "5ba3660dc84601df2a9a6395",
+      "isActive": false,
+      "age": 33,
+      "firstName": "Lelia",
+      "lastName": "Bradshaw",
+      "company": "ENERSOL",
+      "email": "lelia.bradshaw@enersol.tv",
+      "phone": "+1 (955) 418-2318",
+      "address": "742 Throop Avenue, Rivereno, Minnesota, 3914",
+      "registered": "Tuesday, January 3, 2017 4:20 PM",
+      "photo": "https://randomuser.me/api/portraits/women/3.jpg"
+    },
+    {
+      "_id": "5ba3660de8ad5ebc9206f8b9",
+      "isActive": false,
+      "age": 34,
+      "firstName": "Margie",
+      "lastName": "Lucas",
+      "company": "KINETICA",
+      "email": "margie.lucas@kinetica.us",
+      "phone": "+1 (930) 488-2163",
+      "address": "736 Pacific Street, Croom, Montana, 912",
+      "registered": "Thursday, May 8, 2014 1:35 PM"
+    },
+    {
+      "_id": "5ba3660d6bb8b94d7c4545bc",
+      "isActive": false,
+      "age": 36,
+      "firstName": "Selma",
+      "lastName": "Mccullough",
+      "company": "PROSURE",
+      "email": "selma.mccullough@prosure.me",
+      "phone": "+1 (894) 593-3855",
+      "address": "980 Rogers Avenue, Limestone, Texas, 8435",
+      "registered": "Wednesday, November 12, 2014 9:09 PM",
+      "photo": "https://randomuser.me/api/portraits/women/4.jpg"
+    }
+  ]
+}
