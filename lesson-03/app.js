@@ -1,3 +1,34 @@
+let editUser = {
+    name: 'editUser',
+    template: '#edit-user',
+    data: function() {
+        return {
+            showEditForm: false
+        }
+    },
+    props: {
+        user: {
+            type: Object,
+            required: true
+        }
+    },
+    methods: {
+        showHideEditForm: function() {
+            this.showEditForm = !this.showEditForm;
+        },
+        updateUser: function(user) {
+            let url = 'http://localhost:9999/users/' + user.id;
+            axios.put(url, {
+                firstName: user.firstName,
+                lastName: user.lastName,
+                company: user.company
+            }).then(response => {
+                this.users = response.data;
+            });
+        }
+    },
+};
+
 let usersList = {
     name: 'UsersList',
     template: '#users-list',
@@ -23,6 +54,9 @@ let usersList = {
         capitalize: function(value) {
             return value.charAt(0).toUpperCase() + value.substr(1);
         }
+    },
+    components: {
+        'edit-user': editUser
     }
 };
 

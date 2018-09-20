@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "_id": "5ba3660dfd816cf815030205",
+      "id": "5ba3660dfd816cf815030205",
       "isActive": true,
       "age": 23,
       "firstName": "Latoya",
@@ -14,7 +14,7 @@
       "photo": "https://randomuser.me/api/portraits/women/1.jpg"
     },
     {
-      "_id": "5ba3660dc0af02e08ef3eb58",
+      "id": "5ba3660dc0af02e08ef3eb58",
       "isActive": false,
       "age": 28,
       "firstName": "Earnestine",
@@ -27,7 +27,7 @@
       "photo": "https://randomuser.me/api/portraits/women/2.jpg"
     },
     {
-      "_id": "5ba3660dee81b26e7f8660a2",
+      "id": "5ba3660dee81b26e7f8660a2",
       "isActive": false,
       "age": 30,
       "firstName": "Estelle",
@@ -39,7 +39,7 @@
       "registered": "Sunday, June 1, 2014 11:09 AM"
     },
     {
-      "_id": "5ba3660db255f93c241a5528",
+      "id": "5ba3660db255f93c241a5528",
       "isActive": false,
       "age": 30,
       "firstName": "Coffey",
@@ -51,7 +51,7 @@
       "registered": "Tuesday, September 16, 2014 9:32 PM"
     },
     {
-      "_id": "5ba3660dc84601df2a9a6395",
+      "id": "5ba3660dc84601df2a9a6395",
       "isActive": false,
       "age": 33,
       "firstName": "Lelia",
@@ -64,7 +64,7 @@
       "photo": "https://randomuser.me/api/portraits/women/3.jpg"
     },
     {
-      "_id": "5ba3660de8ad5ebc9206f8b9",
+      "id": "5ba3660de8ad5ebc9206f8b9",
       "isActive": false,
       "age": 34,
       "firstName": "Margie",
@@ -76,7 +76,7 @@
       "registered": "Thursday, May 8, 2014 1:35 PM"
     },
     {
-      "_id": "5ba3660d6bb8b94d7c4545bc",
+      "id": "5ba3660d6bb8b94d7c4545bc",
       "isActive": false,
       "age": 36,
       "firstName": "Selma",

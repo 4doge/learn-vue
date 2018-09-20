@@ -37,10 +37,11 @@
             <th>Email</th>
             <th>Phone</th>
             <th></th>
+            <th></th>
         </tr>
         </thead>
         <tbody>
-        <tr v-for="user of users" v-bind:key="user._id">
+        <tr v-for="user of users" v-bind:key="user.id">
             <td>
                 <div class="image is-48x48">
                     <img class="is-rounded" v-bind:src="user.photo || 'default-photo.jpg'" alt="">
@@ -55,9 +56,42 @@
             <td>
                 <button class="button is-outlined is-info" type="button" v-copy="getCopyData(user.firstName, user.lastName)" v-copy:callback="copied">Copy</button>
             </td>
+            <td>
+                <!--<a v-bind:href="'?user.id=' + user.id">-->
+                <!--</a>-->
+                <edit-user v-bind:user="user"></edit-user>
+            </td>
         </tr>
         </tbody>
     </table>
+</div>
+
+<div id="edit-user" style="display: none;">
+    <div>
+        <button v-on:click="showHideEditForm" class="button is-outlined is-info" type="button">Edit</button>
+
+        <form v-if="showEditForm" @submit.prevent="updateUser(user)" action="#">
+            <div class="field">
+                <label class="label">First Name</label>
+                <div class="control">
+                    <input class="input is-small" name="firstName" type="text" v-model="user.firstName">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Last Name</label>
+                <div class="control">
+                    <input class="input is-small" name="lastName" type="text" v-model="user.lastName">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Company</label>
+                <div class="control">
+                    <input class="input is-small" name="company" type="text" v-model="user.company">
+                </div>
+            </div>
+            <button class="button is-small" type="submit">Update</button>
+        </form>
+    </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
