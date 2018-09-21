@@ -36,10 +36,6 @@ let usersList = {
         users: {
             type: Array,
             required: true
-        },
-        showUsersTable: {
-            type: Boolean,
-            required: true
         }
     },
     methods: {
@@ -76,6 +72,9 @@ new Vue({
     computed: {
         usersLength: function() {
             return this.users.length;
+        },
+        toggleTableButtonText: function() {
+            return this.showUsersTable ? 'Hide' : 'Show';
         }
     },
     mounted: function () {

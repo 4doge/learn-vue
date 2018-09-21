@@ -40,7 +40,7 @@
             <button class="button is-outlined is-info" type="button"
                     v-on:click="showHideUsersTable"
                     v-tooltip.right-start="{ content: 'Table showing option', offset: 10 }">
-                {{ showUsersTable ? 'Hide' : 'Show' }}
+                {{ toggleTableButtonText }}
             </button>
         </div>
     </div>

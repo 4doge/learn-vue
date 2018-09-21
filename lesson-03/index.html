@@ -14,19 +14,19 @@
         <div class="content">
             <h1>Users - {{ usersLength }}</h1>
 
-            <users-list v-bind:users="users" v-bind:show-users-table="showUsersTable"></users-list>
+            <users-list v-bind:users="users" v-if="showUsersTable"></users-list>
 
             <button class="button is-outlined is-info" type="button"
                     v-on:click="showHideUsersTable"
                     v-tooltip.right-start="{ content: 'Table showing option', offset: 10 }">
-                {{ showUsersTable ? 'Hide' : 'Show' }}
+                {{ toggleTableButtonText }}
             </button>
         </div>
     </div>
 </div>
 
 <div id="users-list" style="display: none;">
-    <table class="table is-bordered is-striped is-fullwidth is-hoverable" v-if="showUsersTable">
+    <table class="table is-bordered is-striped is-fullwidth is-hoverable">
         <thead>
         <tr>
             <th>Photo</th>
